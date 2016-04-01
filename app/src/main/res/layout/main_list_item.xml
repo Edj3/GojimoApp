@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#CCCCCC">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout android:id="@+id/id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_name"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_id"
+            android:layout_toStartOf="@id/item_id"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/id_title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_layout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/item_link"
+            android:textSize="10sp"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/country_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/link_layout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/country_name"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:text="@string/country_unavailable"/>
+
+        <TextView
+            android:id="@+id/country_created"
+            android:textSize="12sp"
+            android:layout_below="@id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/country_updated"
+            android:textSize="12sp"
+            android:layout_below="@id/country_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/country_link"
+            android:textSize="12sp"
+            android:layout_below="@id/country_updated"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/country_link"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

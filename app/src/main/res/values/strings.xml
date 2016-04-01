@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GojimoApp</string>
+    <string name="id_title">ID :</string>
+    <string name="id_link">Link :</string>
+    <string name="country_unavailable">Country Unavailable</string>
+    <string name="subject_unavailable">Subject Unavailable</string>
+    <string name="no_subjects">This qualification has no subjects.</string>
+    <string name="ok">OK</string>
+    <string name="qualifications">Gojimo Qualifications</string>
+    <string name="subjects">Subjects</string>
+</resources>
